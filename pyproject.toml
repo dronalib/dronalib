@@ -1,0 +1,20 @@
+[project]
+name = "dronalib"
+version = "0.0.1rc1"
+authors =[
+  {name = "Kush Kothari", email="kushkothari2001@gmail.com"},
+]
+description = "A lightweight neural-network library for quick prototyping."
+readme = "README.md"
+license = {file="LICENSE"}
+requires-python = ">=3.7"
+classifiers = [
+  "Development Status :: 1 - Planning",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
