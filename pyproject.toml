@@ -1,6 +1,5 @@
 [project]
 name = "dronalib"
-version = "0.0.1rc1"
 authors =[
   {name = "Kush Kothari", email="kushkothari2001@gmail.com"},
 ]
@@ -11,10 +10,33 @@ requires-python = ">=3.7"
 classifiers = [
   "Development Status :: 1 - Planning",
 ]
+dependencies = [
+    "numpy",
+]
+dynamic= [
+  "version"
+]
+
+[project.optional-dependencies]
+dev = [
+  "pre-commit",
+  "black",
+  "flake8"
+]
+test = [
+  "pytest",
+]
+
+[project.urls]
+Download = "https://github.com/dronalib/dronalib"
+Homepage = "https://github.com/dronalib/dronalib"
 
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
+
+[tool.hatch.version]
+path = "src/dronalib/version.py"
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
