@@ -3,4 +3,4 @@
 
 def say_hello() -> None:
     """Says Hello!"""
-    print("Hello Drona!")
+    print("Hello Drona!")  # noqa: T201
